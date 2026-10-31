@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बजरंग बाबा दरबार - हल करिए अपने जीवन के संकट</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            orange: '#f97316', // Saffron/Orange
+                            darkOrange: '#ea580c',
+                            beige: '#fef3c7',  // Light yellow/beige background
+                            darkBeige: '#fde68a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the vertical right button to ensure it reads nicely */
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg); /* Adjust reading direction if needed */
+            letter-spacing: 0.05em;
+        }
+        
+        /* Ensure the body has enough padding so the sticky footer doesn't cover content */
+        body {
+            padding-bottom: 70px; 
+            background-color: #fef3c7; /* Brand beige */
+            color: #4a3022; /* Dark brownish text for contrast on beige */
+        }
+
+        /* Subtle pattern overlay for spiritual feel */
+        .bg-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23eab308' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-pattern antialiased">
+
+    <!-- Sticky Right Button -->
+    <a href="#booking-form" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-[url('https://placehold.co/40x150/f97316/ffffff?text=Wood')] bg-brand-orange text-white py-6 px-2 rounded-l-lg shadow-2xl border-y-2 border-l-2 border-yellow-300 hover:bg-brand-darkOrange transition-colors flex items-center justify-center text-lg font-bold shadow-[0_0_15px_rgba(249,115,22,0.5)] group">
+        <span class="vertical-text group-hover:scale-105 transition-transform duration-300">अपनी अर्जी लगाएँ</span>
+    </a>
+
+    <!-- Sticky Bottom Banner -->
+    <div class="fixed bottom-0 left-0 w-full z-40 bg-brand-orange text-white shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
+        <a href="#booking-form" class="block w-full text-center py-4 text-xl md:text-2xl font-bold hover:bg-brand-darkOrange transition-colors">
+            अपनी अर्जी लगाएँ 2500/-
+        </a>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20">
+
+        <!-- 1. Hero Section -->
+        <section class="text-center py-12 md:py-20 relative">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-full bg-white/40 blur-3xl rounded-full -z-10"></div>
+            
+            <h2 class="text-2xl md:text-3xl font-semibold text-orange-800 mb-2">बजरंग बाबा दरबार</h2>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-orange-600 tracking-tight mb-6 drop-shadow-md">
+                हल करिए <br class="hidden md:block" /> अपने जीवन के संकट
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-10">
+                क्या आप समस्याओं से घिरे हैं? सही मार्गदर्शन और दिव्य कृपा से हर मुश्किल का समाधान संभव है।
+            </p>
+            
+            <!-- Hero Image Placeholder -->
+            <div class="flex justify-center mb-10 relative">
+                 <div class="absolute inset-0 bg-orange-400 rounded-full blur-2xl opacity-20 transform scale-110"></div>
+                 <img src="https://placehold.co/400x400/ea580c/ffffff?text=Baba+Image" alt="बजरंग बाबा" class="rounded-full shadow-2xl border-4 border-yellow-400 w-64 h-64 md:w-80 md:h-80 object-cover relative z-10">
+            </div>
+
+            <a href="#booking-form" class="inline-block bg-brand-orange text-white text-xl font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                आज ही अर्जी लगाएँ
+            </a>
+        </section>
+
+        <!-- 2. Problem Overview -->
+        <section class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 border-b-2 border-brand-orange inline-block pb-2">क्या आपके जीवन में ऐसे संकट चल रहे हे?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
+                    <img src="https://placehold.co/400x300/f87171/ffffff?text=Court+Gavel" alt="कोर्ट केस/उधारी" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800">कोर्ट केस/उधारी</h3>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
+                    <img src="https://placehold.co/400x300/60a5fa/ffffff?text=Health+Issue" alt="रोग" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800">रोग</h3>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
+                    <img src="https://placehold.co/400x300/fbbf24/ffffff?text=Money+Business" alt="व्यवसाय/धन" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800">व्यवसाय/धन</h3>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 border border-gray-100">
+                    <img src="https://placehold.co/400x300/34d399/ffffff?text=Career+Stress" alt="करियर/नौकरी" class="w-full h-48 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-800">करियर/नौकरी</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About / Process Section -->
+        <section class="py-16 bg-white/60 rounded-3xl shadow-sm border border-brand-darkBeige px-6 md:px-12 my-10 backdrop-blur-sm">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-4xl font-extrabold text-brand-darkOrange mb-4">बजरंग बाबा दरबार</h2>
+                
+                <div class="flex flex-wrap justify-center items-center gap-2 text-lg md:text-xl font-medium text-orange-700 mb-8">
+                    <span>ज्योतिषीय विश्लेषण</span>
+                    <span class="text-gray-400">&rarr;</span>
+                    <span>अंतर्ज्ञान</span>
+                    <span class="text-gray-400">&rarr;</span>
+                    <span>भविष्य के संकेत</span>
+                    <span class="text-gray-400">&rarr;</span>
+                    <span class="font-bold text-brand-darkOrange">हनुमान अर्जी से समाधान</span>
+                </div>
+
+                <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                    ग्रहों का विश्लेषण भी। भविष्य का मार्गदर्शन भी। संकट का समाधान भी। 
+                    आपके साथ क्या हो रहा है, यह आप जानते हैं... लेकिन क्यों हो रहा है, आगे क्या होगा और इसका समाधान क्या है - यह बजरंग बाबा बताएंगे। बजरंग बाबा दरबार से संकट विश्लेषण रिपोर्ट और पर्सनल अपॉइंटमेंट का मार्ग पाएं।
+                </p>
+
+                <a href="#booking-form" class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white text-lg font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transition-all">
+                    अपनी अर्जी लगाएँ
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. Detailed Problems Grid -->
+        <section class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">किस-किस प्रॉब्लम के लिए लोग दरबार में आते हैं</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Detailed Card 1 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/334155/ffffff?text=Career+Growth" alt="करियर में ग्रोथ रुक गई है?" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-950/90 via-orange-900/40 to-transparent flex items-end justify-center p-6">
+                        <h3 class="text-white text-lg md:text-xl font-bold text-center w-full">करियर में ग्रोथ रुक गई है?</h3>
+                    </div>
+                </div>
+                <!-- Detailed Card 2 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/475569/ffffff?text=Business+Down" alt="बिज़नेस रुक गया है?" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-950/90 via-orange-900/40 to-transparent flex items-end justify-center p-6">
+                        <h3 class="text-white text-lg md:text-xl font-bold text-center w-full">बिज़नेस रुक गया है?</h3>
+                    </div>
+                </div>
+                <!-- Detailed Card 3 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/64748b/ffffff?text=Relationship+Issues" alt="रिलेशनशिप या मैरिज में ब्लॉकेज है?" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-950/90 via-orange-900/40 to-transparent flex items-end justify-center p-6">
+                        <h3 class="text-white text-lg md:text-xl font-bold text-center w-full">रिलेशनशिप या मैरिज में ब्लॉकेज है?</h3>
+                    </div>
+                </div>
+                <!-- Detailed Card 4 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/94a3b8/ffffff?text=Family+Disturbance" alt="घर में लगातार अशांति है?" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-950/90 via-orange-900/40 to-transparent flex items-end justify-center p-6">
+                        <h3 class="text-white text-lg md:text-xl font-bold text-center w-full">घर में लगातार अशांति है?</h3>
+                    </div>
+                </div>
+                <!-- Detailed Card 5 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/cbd5e1/475569?text=Negative+Energy" alt="नज़र, बंधन या नेगेटिव एनर्जी का डाउट है?" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-950/90 via-orange-900/40 to-transparent flex items-end justify-center p-6">
+                        <h3 class="text-white text-lg md:text-xl font-bold text-center w-full">नज़र, बंधन या नेगेटिव एनर्जी का डाउट है?</h3>
+                    </div>
+                </div>
+                <!-- Detailed Card 6 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-lg group aspect-[4/3]">
+                    <img src="https://placehold.co/600x450/f1f5f9/475569?text=Legal+Pressure" alt="कोर्ट, एनिमी या लीगल प्रेशर है?" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-orange-950/90 via-orange-900/40 to-transparent flex items-end justify-center p-6">
+                        <h3 class="text-white text-lg md:text-xl font-bold text-center w-full">कोर्ट, एनिमी या लीगल प्रेशर है?</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Booking Form Section -->
+        <section id="booking-form" class="py-16">
+            <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border-t-8 border-brand-orange">
+                <div class="p-8 md:p-10">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-2">अपनी अर्जी दर्ज करें</h2>
+                        <p class="text-gray-500">कृपया अपनी जानकारी भरें, बाबा का आशीर्वाद प्राप्त करें।</p>
+                    </div>
+
+                    <form id="appointmentForm" onsubmit="processPayment(event)" class="space-y-6">
+                        <!-- Name Field -->
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">पूरा नाम (Full Name)</label>
+                            <input type="text" id="fullName" name="fullName" required 
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-colors"
+                                placeholder="अपना नाम लिखें">
+                        </div>
+
+                        <!-- Phone Field -->
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">फ़ोन नंबर (Phone Number)</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">+91</span>
+                                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="कृपया 10 अंकों का मोबाइल नंबर दर्ज करें"
+                                    class="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-colors"
+                                    placeholder="1234567890">
+                            </div>
+                        </div>
+
+                        <!-- Problem Dropdown -->
+                        <div>
+                            <label for="problem" class="block text-sm font-medium text-gray-700 mb-1">मुख्य समस्या (Main Problem)</label>
+                            <select id="problem" name="problem" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-colors bg-white appearance-none">
+                                <option value="" disabled selected>समस्या चुनें...</option>
+                                <option value="career">करियर/नौकरी (Career/Job)</option>
+                                <option value="business">व्यवसाय/धन (Business/Wealth)</option>
+                                <option value="health">रोग (Health)</option>
+                                <option value="court">कोर्ट केस/उधारी (Court Case/Debt)</option>
+                                <option value="relationship">रिलेशनशिप/मैरिज (Relationship/Marriage)</option>
+                                <option value="other">अन्य (Other)</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Info Box -->
+                        <div class="bg-orange-50 border border-orange-200 rounded-lg p-4 flex gap-3 text-orange-800 text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                            </svg>
+                            <p>अर्जी शुल्क: <strong>₹2500/-</strong> (यह राशि अप्रतिदेय/Non-refundable है)</p>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="submitBtn" 
+                            class="w-full bg-brand-orange hover:bg-brand-darkOrange text-white font-bold text-lg py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex justify-center items-center">
+                            <span>2500/- का भुगतान करें</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Form Submission Logic -->
+    <script>
+        function processPayment(event) {
+            // Prevent actual form submission to handle redirect manually
+            event.preventDefault();
+
+            const form = event.target;
+            if (!form.checkValidity()) {
+                return; // Let browser handle basic HTML5 validation UI
+            }
+
+            const submitBtn = document.getElementById('submitBtn');
+            const originalContent = submitBtn.innerHTML;
+
+            // Visual feedback - Loading state
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+            submitBtn.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>प्रतीक्षा करें...</span>
+            `;
+
+            // Collect data (optional, just to show we could)
+            const formData = new FormData(form);
+            console.log("Form Data Prepared:", Object.fromEntries(formData));
+
+            // Simulate API call/processing time then redirect to Razorpay
+            setTimeout(() => {
+                // In a real scenario, you'd call your backend here to generate a Razorpay order ID,
+                // then open the checkout modal. For this requirement, we redirect.
+                window.location.href = 'https://razorpay.com/';
+                
+                // Reset button just in case user navigates back
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                    submitBtn.innerHTML = originalContent;
+                    form.reset();
+                }, 1000);
+
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
