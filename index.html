@@ -120,17 +120,20 @@
 <body>
 
   <div class="video-container">
-    <video autoplay loop muted playsinline width="100%">
-  <source src="images/baba.mp4" type="video/mp4">
-      <!-- Main MP4 Video File -->
-      <source src="images/baba.mp4" type="video/mp4">
-      
-      <!-- Backup WebM Format for better browser compatibility -->
-      <source src="video.webm" type="video/webm">
-      
-      <!-- Fallback text if browser doesn't support video -->
-      Your browser does not support the video tag.
-    </video>
+    <video id="myVideo" playsinline controls width="100%">
+  <source src="baba.mp4" type="video/mp4">
+</video>
+
+<script>
+  const video = document.getElementById('myVideo');
+
+  // Play video with audio on the first user click/tap anywhere on the document
+  document.body.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    }
+  }, { once: true });
+</script>
   </div>
             </div>
         </section>
