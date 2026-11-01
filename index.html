@@ -97,11 +97,18 @@
         <section class="py-12 md:py-16">
             <div class="text-center mb-10">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 border-b-2 border-brand-orange inline-block pb-2">दरबार दर्शन (Video)</h2>
-                <p class="text-gray-700 mt-4 text-lg">.बजरंग बाबा दरबार की एक झलक देखें और दिव्य ऊर्जा का अनुभव करें।</p>
+                <p class="text-gray-700 mt-4 text-lg">बजरंग बाबा दरबार की एक झलक देखें और दिव्य ऊर्जा का अनुभव करें।</p>
             </div>
             
             <div class="max-w-4xl mx-auto bg-white p-2 md:p-4 rounded-3xl shadow-xl border border-brand-darkBeige">
                <style>
+    /* Container to keep video responsive */
+    .video-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
     /* Container to keep video responsive */
     .video-container {
       width: 100%;
@@ -122,15 +129,14 @@
   <div class="video-container">
     <video controls preload="metadata" poster="thumbnail.jpg">
       <!-- Main MP4 Video File -->
-      <source src="images/babavideo.mp4" type="video/mp4">
+      <source src="baba.mp4" type="video/mp4">
       
       <!-- Backup WebM Format for better browser compatibility -->
-      <source src="video.webm" type="video/webm">
+      <source src="baba.mp4" type="video/mp4">
       
       <!-- Fallback text if browser doesn't support video -->
       Your browser does not support the video tag.
     </video>
-  </div>
             </div>
         </section>
 
