@@ -50,20 +50,32 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+
+        /* Container to keep video responsive */
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
     </style>
 </head>
 <body class="bg-pattern antialiased">
 
     <!-- Sticky Right Button -->
-    <!-- CUSTOM LINK: Replace 'YOUR_LINK_HERE' with your WhatsApp link (e.g. https://wa.me/1234567890) or anchor (#booking-form) -->
-    <a href="YOUR_LINK_HERE" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-[url('https://placehold.co/40x150/f97316/ffffff?text=)] bg-brand-orange text-white py-6 px-2 rounded-l-lg shadow-2xl border-y-2 border-l-2 border-yellow-300 hover:bg-brand-darkOrange transition-colors flex items-center justify-center text-lg font-bold shadow-[0_0_15px_rgba(249,115,22,0.5)] group">
+    <a href="#booking-form" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-brand-orange text-white py-6 px-2 rounded-l-lg shadow-2xl border-y-2 border-l-2 border-yellow-300 hover:bg-brand-darkOrange transition-colors flex items-center justify-center text-lg font-bold shadow-[0_0_15px_rgba(249,115,22,0.5)] group">
         <span class="vertical-text group-hover:scale-105 transition-transform duration-300">अपनी अर्जी लगाएँ</span>
     </a>
 
     <!-- Sticky Bottom Banner -->
-    <!-- CUSTOM LINK: Replace 'YOUR_LINK_HERE' with your desired URL -->
     <div class="fixed bottom-0 left-0 w-full z-40 bg-brand-orange text-white shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
-        <a href="YOUR_LINK_HERE" class="block w-full text-center py-4 text-xl md:text-2xl font-bold hover:bg-brand-darkOrange transition-colors">
+        <a href="#booking-form" class="block w-full text-center py-4 text-xl md:text-2xl font-bold hover:bg-brand-darkOrange transition-colors">
             अपनी अर्जी लगाएँ 2500/-
         </a>
     </div>
@@ -101,42 +113,12 @@
             </div>
             
             <div class="max-w-4xl mx-auto bg-white p-2 md:p-4 rounded-3xl shadow-xl border border-brand-darkBeige">
-               <style>
-    /* Container to keep video responsive */
-    .video-container {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    /* Container to keep video responsive */
-    .video-container {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    video {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
-  </style>
-</head>
-<body>
-
-  <div class="video-container">
-    <video controls preload="metadata" poster="thumbnail.jpg">
-      <!-- Main MP4 Video File -->
-      <source src="images/baba.mp4" type="video/mp4">
-      
-      <!-- Backup WebM Format for better browser compatibility -->
-      <source src="images/baba.mp4" type="video/mp4">
-      
-      <!-- Fallback text if browser doesn't support video -->
-      Your browser does not support the video tag.
-    </video>
+                <div class="video-container">
+                    <video controls preload="metadata" poster="thumbnail.jpg">
+                        <source src="images/baba.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </section>
 
@@ -207,7 +189,6 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Cards remain same as previous -->
                 <div class="relative rounded-2xl overflow-hidden shadow-lg group aspect-[4/3]">
                     <img src="https://placehold.co/600x450/334155/ffffff?text=Career+Growth" alt="करियर में ग्रोथ रुक गई है?" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-orange-950/90 via-orange-900/40 to-transparent flex items-end justify-center p-6">
@@ -254,15 +235,12 @@
             </div>
             
             <div class="relative max-w-6xl mx-auto group">
-                <!-- Left Navigation Button -->
                 <button id="slideLeft" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 text-brand-orange p-3 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-brand-orange hover:text-white transition-all duration-300 opacity-80 group-hover:opacity-100">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
                 </button>
 
-                <!-- Slider Container -->
-                <!-- Replace src with your actual image paths -->
                 <div id="gallerySlider" class="flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar px-4 py-6 scroll-smooth">
                     <div class="snap-center shrink-0 w-[280px] sm:w-[320px] md:w-[400px] h-[280px] sm:h-[320px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg border-2 border-brand-darkBeige">
                         <img src="images/bab (1).webp" alt="Gallery 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
@@ -284,7 +262,6 @@
                     </div>
                 </div>
 
-                <!-- Right Navigation Button -->
                 <button id="slideRight" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 text-brand-orange p-3 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:bg-brand-orange hover:text-white transition-all duration-300 opacity-80 group-hover:opacity-100">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -352,17 +329,20 @@
 
     </main>
 
-    <!-- JavaScript for Payment Process & Sliding Gallery -->
+    <!-- JavaScript for Form Submission to Google Sheet & Razorpay Redirection -->
     <script>
+        // Updated Web App URL
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyF0CSfijBAV_WlvDjvmfqSEnk1GbvErefd4qPqFhw2_VGubQTV388oyFlH-utytaO5/exec';
+        
+        // REPLACE WITH YOUR ACTUAL RAZORPAY PAYMENT LINK (e.g. https://rzp.io/l/your-link)
+        const RAZORPAY_URL = 'https://razorpay.com/'; 
+
         // --- Image Gallery Slider Logic ---
         const slider = document.getElementById('gallerySlider');
         const slideLeft = document.getElementById('slideLeft');
         const slideRight = document.getElementById('slideRight');
 
-        // Scroll amount based on screen size (approx width of one image card + gap)
-        const getScrollAmount = () => {
-            return window.innerWidth < 768 ? 300 : 420;
-        };
+        const getScrollAmount = () => window.innerWidth < 768 ? 300 : 420;
 
         slideLeft.addEventListener('click', () => {
             slider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
@@ -372,18 +352,19 @@
             slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
         });
 
-        // --- Form Submission Logic ---
-        function processPayment(event) {
+        // --- Form Submission & Redirection Logic ---
+        async function processPayment(event) {
             event.preventDefault();
 
             const form = event.target;
             if (!form.checkValidity()) {
-                return; 
+                return;
             }
 
             const submitBtn = document.getElementById('submitBtn');
             const originalContent = submitBtn.innerHTML;
 
+            // UI Loading state
             submitBtn.disabled = true;
             submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
             submitBtn.innerHTML = `
@@ -394,20 +375,34 @@
                 <span>प्रतीक्षा करें...</span>
             `;
 
-            const formData = new FormData(form);
-            console.log("Form Data Prepared:", Object.fromEntries(formData));
+            const payload = {
+                fullName: document.getElementById('fullName').value,
+                phone: document.getElementById('phone').value,
+                problem: document.getElementById('problem').value
+            };
 
-            setTimeout(() => {
-                window.location.href = 'https://razorpay.com/';
+            try {
+                // Send data to Google Sheet via Apps Script Web App
+                await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Bypasses CORS restrictions
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                // Redirect to Razorpay payment page
+                window.location.href = RAZORPAY_URL;
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('डेटा सबमिट करने में समस्या आई। कृपया पुनः प्रयास करें।');
                 
-                setTimeout(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
-                    submitBtn.innerHTML = originalContent;
-                    form.reset();
-                }, 1000);
-
-            }, 1500);
+                // Reset button state if submission fails
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                submitBtn.innerHTML = originalContent;
+            }
         }
     </script>
 </body>
